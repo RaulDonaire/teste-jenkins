@@ -1,0 +1,9 @@
+com\FF_BackForFront_Service\config\CorsConfig$1.class
+com\FF_BackForFront_Service\config\CorsConfig.class
+com\FF_BackForFront_Service\controller\MainController.class
+com\FF_BackForFront_Service\model\Servico.class
+com\FF_BackForFront_Service\model\MenuItems.class
+com\FF_BackForFront_Service\model\Mensagem.class
+com\FF_BackForFront_Service\BFF_FFPortal.class
+com\FF_BackForFront_Service\model\Atributo.class
+com\FF_BackForFront_Service\model\Item.class
