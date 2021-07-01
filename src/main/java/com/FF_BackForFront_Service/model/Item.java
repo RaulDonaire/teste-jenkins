@@ -25,4 +25,11 @@ public class Item {
     public void addServico(Servico servico){
         this.servicos.add(servico);
     }
+
+    public boolean contemServico(String nomeServico){
+        for(Servico serv : this.servicos ){
+            if (serv.getNome()==nomeServico) return true;
+        }
+        return false;
+    }
 }

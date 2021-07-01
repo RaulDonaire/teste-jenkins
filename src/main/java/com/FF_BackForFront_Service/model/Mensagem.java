@@ -1,37 +1,48 @@
 package com.FF_BackForFront_Service.model;
+
 import java.util.UUID;
 import java.util.Date;
 import java.util.List;
 
 public class Mensagem {
 
-    public Mensagem(String nomeMensagem, String texto) {
+    public Mensagem(String nomeMensagem, String texto, String id, UUID uuid, String collector, int code, Date start,
+            Date end, List<Object> raw, String sendResponseTo) {
         this.name = nomeMensagem;
         this.message = texto;
+        this.id = id;
+        this.uuid = uuid;
+        this.collector = collector;
+        this.code = code;
+        this.start = start;
+        this.end = end;
+        this.raw = raw;
+        this.sendResponseTo = sendResponseTo;
     }
+
+    public Mensagem(){}
 
     private String id;
     private UUID uuid;
-	private String collector;
-	private String name;
-	private String parentName;
-	private int code;
-	private String message;
-	private Date start;
-	private Date end;
-	private List<Object> raw;
+    private String collector;
+    private String name;
+    private String parentName;
+    private int code;
+    private String message;
+    private Date start;
+    private Date end;
+    private List<Object> raw;
     private String sendResponseTo;
 
-
-    public String getSendResponseTo(){
+    public String getSendResponseTo() {
         return this.sendResponseTo;
     }
 
-    public void setSendResponseTo(String responseTo){
+    public void setSendResponseTo(String responseTo) {
         this.sendResponseTo = responseTo;
     }
 
-	public String getId() {
+    public String getId() {
         return id;
     }
 
@@ -110,6 +121,5 @@ public class Mensagem {
     public String getMessage() {
         return this.message;
     }
-
 
 }
